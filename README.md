@@ -23,6 +23,7 @@ The solution automates:
 - Monitoring and logging
 
 This project highlights DevOps automation, Infrastructure as Code concepts, CI/CD best practices, and containerized application deployment workflows.
+
 ---
 
 ## Table of Contents
@@ -47,6 +48,7 @@ This project highlights DevOps automation, Infrastructure as Code concepts, CI/C
 ![Azure DevOps Architecture](architecture/azure-devops-architecture.png)
 
 This architecture illustrates the complete CI/CD workflow from GitHub source integration to Azure DevOps pipeline automation, Docker containerization, deployment validation, and monitoring.
+
 ---
 
 # ⚙️ Technologies Used
@@ -62,6 +64,16 @@ This architecture illustrates the complete CI/CD workflow from GitHub source int
 - Containerization
 - DevOps
 - Infrastructure Automation
+
+---
+
+# ☁️ Azure Services Used
+
+- Azure DevOps
+- Azure Container Registry (ACR)
+- Azure App Service
+- Azure Deployment Center
+- Azure Monitoring & Logs
 
 ---
 
@@ -198,6 +210,21 @@ Successful deployment validation of containerized web application through Azure 
 - Deployment Validation
 - Monitoring & Logs
 
+---
+# 📄 Sample Azure DevOps Pipeline
+
+```yaml
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: docker build -t nginx-webapp .
+  displayName: Build Docker Image
+```
+
 # 🚀 Deployment Steps
 
 ## Clone Repository
@@ -263,4 +290,5 @@ Cloud & DevOps Engineer
 
 - LinkedIn: https://www.linkedin.com/in/santosh-singh-141a5775/
 - GitHub: https://github.com/santoshsingh7891
+  
 ⭐ If you found this project useful, feel free to star the repository.
