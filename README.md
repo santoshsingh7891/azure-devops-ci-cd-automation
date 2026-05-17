@@ -76,3 +76,119 @@ azure-devops-ci-cd-automation/
 ├── style.css
 ├── README.md
 └── .gitignore
+```
+
+# 🔄 CI/CD Workflow
+
+1. Developer pushes code to GitHub repository
+2. Azure DevOps pipeline gets triggered
+3. Docker image build process starts
+4. Nginx container deployment is executed
+5. Application deployment validation is performed
+6. Monitoring and logs are generated
+
+---
+
+# 📸 Project Screenshots
+
+## Architecture Diagram
+
+![Architecture](architecture/azure-devops-architecture.png)
+
+---
+
+## Azure DevOps Pipeline
+
+![Pipeline](screenshots/azure-pipeline.png)
+
+---
+
+## Docker Build Process
+
+![Docker Build](screenshots/docker-build.png)
+
+---
+
+## Nginx Container Deployment
+
+![Container](screenshots/nginx-container.png)
+
+---
+
+## Application Deployment Validation
+
+![Deployment](screenshots/deployment-validation.png)
+
+---
+
+## Monitoring & Logs
+
+![Logs](screenshots/monitoring-logs.png)
+
+---
+
+# 🚀 Deployment Steps
+
+## Clone Repository
+
+```bash
+git clone https://github.com/santoshsingh7891/azure-devops-ci-cd-automation.git
+```
+
+## Build Docker Image
+
+```bash
+docker build -t nginx-webapp .
+```
+
+## Run Docker Container
+
+```bash
+docker run -d -p 80:80 nginx-webapp
+```
+
+---
+
+# 🔐 Security Best Practices
+
+- Secure CI/CD pipeline configuration
+- Containerized deployment isolation
+- Git-based version control
+- Automated deployment validation
+- Monitoring and operational logging
+
+---
+
+# 📈 Future Enhancements
+
+- Kubernetes deployment integration
+- Azure Kubernetes Service (AKS)
+- Terraform automation
+- SonarQube code quality analysis
+- Prometheus & Grafana monitoring
+- Multi-stage Docker builds
+- GitHub Actions integration
+
+---
+
+# 🧹 Cleanup
+
+```bash
+docker stop <container_id>
+docker rm <container_id>
+docker rmi nginx-webapp
+```
+
+---
+
+# 👨‍💻 Author
+
+Santosh Singh  
+Cloud & DevOps Engineer
+
+---
+
+# 🔗 Connect With Me
+
+- LinkedIn: https://www.linkedin.com/in/santosh-singh-141a5775/
+- GitHub: https://github.com/santoshsingh7891
