@@ -5,6 +5,8 @@
 
 # Azure DevOps CI/CD Automation
 
+Docker | Azure DevOps | CI/CD Pipelines | Container Deployment Automation
+
 Enterprise Azure DevOps CI/CD automation project using Docker, Nginx, YAML pipelines, monitoring, and deployment automation.
 
 ---
@@ -21,6 +23,22 @@ The solution automates:
 - Monitoring and logging
 
 This project highlights DevOps automation, Infrastructure as Code concepts, CI/CD best practices, and containerized application deployment workflows.
+---
+
+## Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Architecture Diagram](#️-architecture-diagram)
+- [Technologies Used](#️-technologies-used)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [CI/CD Workflow](#-cicd-workflow)
+- [Project Screenshots](#-project-screenshots)
+- [Deployment Steps](#-deployment-steps)
+- [Security Best Practices](#-security-best-practices)
+- [Future Enhancements](#-future-enhancements)
+- [Cleanup](#-cleanup)
+- [Author](#-author)
 
 ---
 
@@ -28,6 +46,7 @@ This project highlights DevOps automation, Infrastructure as Code concepts, CI/C
 
 ![Azure DevOps Architecture](architecture/azure-devops-architecture.png)
 
+This architecture illustrates the complete CI/CD workflow from GitHub source integration to Azure DevOps pipeline automation, Docker containerization, deployment validation, and monitoring.
 ---
 
 # ⚙️ Technologies Used
@@ -40,6 +59,9 @@ This project highlights DevOps automation, Infrastructure as Code concepts, CI/C
 - Linux
 - HTML/CSS
 - CI/CD Automation
+- Containerization
+- DevOps
+- Infrastructure Automation
 
 ---
 
@@ -53,6 +75,7 @@ This project highlights DevOps automation, Infrastructure as Code concepts, CI/C
 - Deployment validation
 - Monitoring and logs collection
 - DevOps workflow automation
+- Reusable YAML-based CI/CD pipelines
 
 ---
 
@@ -78,6 +101,7 @@ azure-devops-ci-cd-automation/
 └── .gitignore
 ```
 
+
 # 🔄 CI/CD Workflow
 
 1. Developer pushes code to GitHub repository
@@ -91,34 +115,71 @@ azure-devops-ci-cd-automation/
 
 # 📸 Project Screenshots
 
-## Architecture Diagram
-
-![Architecture](architecture/azure-devops-architecture.png)
-
----
-
-## Azure DevOps Pipeline
-
-![Pipeline](screenshots/azure-pipeline.png)
+## Azure Resource Group
+![Resource Group](screenshots/azure-resource-group.png)
 
 ---
 
-## Docker Build Process
+## Azure Container Registry
+![ACR](screenshots/azure-container-registry.png)
 
+---
+
+## Application Source Code
+![Application Code](screenshots/application-code.png)
+
+---
+
+## Dockerfile Configuration
+![Dockerfile](screenshots/dockerfile.png)
+
+---
+
+## Docker Image Build
 ![Docker Build](screenshots/docker-build.png)
 
 ---
 
-## Nginx Container Deployment
-
-![Container](screenshots/nginx-container.png)
+## Docker Container Execution
+![Container Run](screenshots/docker-container-run.png)
 
 ---
 
-## Application Deployment Validation
+## Local Deployment Validation
+![Local Validation](screenshots/local-deployment-validation.png)
 
-![Deployment](screenshots/deployment-validation.png)
+---
 
+## Docker Image Push to ACR
+![Docker Push](screenshots/docker-image-push-acr.png)
+
+---
+
+## Azure App Service
+![App Service](screenshots/azure-app-service.png)
+
+---
+
+## Azure Web App Overview
+![Web App](screenshots/webapp-overview.png)
+
+---
+
+## Live Application Deployment
+
+Successful deployment validation of containerized web application through Azure App Service.
+
+![Live Application](screenshots/live-application.png)
+
+---
+
+## Deployment Slots
+![Deployment Slots](screenshots/deployment-slots.png)
+
+---
+
+## Deployment Center Configuration
+![Deployment Center](screenshots/deployment-center.png)
 ---
 
 ## Monitoring & Logs
@@ -126,6 +187,16 @@ azure-devops-ci-cd-automation/
 ![Logs](screenshots/monitoring-logs.png)
 
 ---
+
+# 📦 Pipeline Components
+
+- GitHub Repository Integration
+- Azure DevOps YAML Pipeline
+- Docker Image Build & Tagging
+- Azure Container Registry (ACR)
+- Azure App Service Deployment
+- Deployment Validation
+- Monitoring & Logs
 
 # 🚀 Deployment Steps
 
@@ -192,3 +263,4 @@ Cloud & DevOps Engineer
 
 - LinkedIn: https://www.linkedin.com/in/santosh-singh-141a5775/
 - GitHub: https://github.com/santoshsingh7891
+⭐ If you found this project useful, feel free to star the repository.
